@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Board</h1>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- category 1 -->
+            <li class="drag-column backlog-column">
+                <span class="header">
+                    <h1>TO DO</h1>
+                </span>
+                <div class="custom-scroll" id="backlog-content">
+                    <ul class="drag-item-list" id="backlog-list">
+                        <li class="drag-item" draggable="true">Design animation</li>
+                        <li class="drag-item" draggable="true">New template illustration</li>
+                        <li class="drag-item" draggable="true">Add feedback to wallboard</li>
+                        <li class="drag-item" draggable="true">Implement feedback collector</li>
+                    </ul>
+                </div>
+            </li>
+            <!-- category 2 -->
+            <li class="drag-column progress-column">
+                <span class="header">
+                    <h1>IN PROGRESS</h1>
+                </span>
+                <div class="custom-scroll" id="progress-content">
+                    <ul class="drag-item-list" id="progress-list">
+                        <li class="drag-item" draggable="true">Design Logo</li>
+                        <li class="drag-item" draggable="true">change phone number to 'phone'</li>
+                    </ul>
+                </div>
+            </li>
+             <!-- category 3 -->
+             <li class="drag-column review-column">
+                <span class="header">
+                    <h1>IN REVIEW</h1>
+                </span>
+                <div class="custom-scroll" id="review-content">
+                    <ul class="drag-item-list" id="review-list"></ul>
+                </div>
+            </li>
+             <!-- category 4 -->
+             <li class="drag-column complete-column">
+                <span class="header">
+                    <h1>DONE</h1>
+                </span>
+                <div class="custom-scroll" id="complete-content">
+                    <ul class="drag-item-list" id="complete-list"></ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

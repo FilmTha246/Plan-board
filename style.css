@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
+:root {
+    --category-1: #db614b;
+    --category-2: #ff9a3c;
+    --category-3: #e9f749;
+    --category-4: #22c022;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fff;
+    overflow-y: hidden;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px grey;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.drag-container {
+    margin: 20px;
+}
+
+.drag-list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.drag-column {
+    flex: 1;
+    margin: 0 10px;
+    position: relative;
+    background-color: rgba(43, 121, 173, 0.2);
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.backlog-column .header{
+    background-color: var(--category-1);
+}
+
+.proress-column .header {
+    background-color: var(--category-2);
+}
+
+.review-column .header {
+    background-color: var(--category-3);
+}
+
+.complete-column .header {
+    background-color: var(--category-4);
+}
+
+.custom-scroll {
+    overflow-y: auto;
+    max-height: 52vh;
+}
+
+.drag-item-list {
+    min-height: 50px;
+}
+
+.drag-item {
+    margin: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgba(255, 255, 253, 0.8);
+    border-radius: 10px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
